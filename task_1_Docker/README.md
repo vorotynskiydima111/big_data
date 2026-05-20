@@ -34,26 +34,6 @@ DB_PORT=5432
 VOLUME_NAME=user_logs_pgdata
 ```
 
-## Запуск проекта
-
-Перейти в папку задания:
-
-```bash
-cd big_data/task1
-```
-
-Удалить старый контейнер и volume, если проект уже запускался:
-
-```bash
-docker compose down -v
-```
-
-Запустить сборку и контейнер:
-
-```bash
-docker compose up --build
-```
-
 ## Подключение к контейнеру
 
 Получить ID контейнера:
