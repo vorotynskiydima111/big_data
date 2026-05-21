@@ -24,15 +24,7 @@
 
 ## Переменные окружения
 
-В файле `.env` указаны параметры подключения к базе данных:
-
-```env
-DB_USER=user
-DB_PASSWORD=password
-DB_NAME=user_logs_db
-DB_PORT=5432
-VOLUME_NAME=user_logs_pgdata
-```
+В файле `.env` указаны параметры подключения к базе данных
 
 ## Подключение к контейнеру
 
