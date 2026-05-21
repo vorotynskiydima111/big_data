@@ -1,0 +1,19 @@
+[2026-05-21T15:25:27.072+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-21T15:25:27.086+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_student_performance_mart.calculate_advanced_metrics manual__2026-05-21T15:25:21.717936+00:00 [queued]>
+[2026-05-21T15:25:27.095+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_student_performance_mart.calculate_advanced_metrics manual__2026-05-21T15:25:21.717936+00:00 [queued]>
+[2026-05-21T15:25:27.097+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-05-21T15:25:27.108+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): calculate_advanced_metrics> on 2026-05-21 15:25:21.717936+00:00
+[2026-05-21T15:25:27.115+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'create_student_performance_mart', 'calculate_advanced_metrics', 'manual__2026-05-21T15:25:21.717936+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/dag_student_performance.py', '--cfg-path', '/tmp/tmpi83ggepj']
+[2026-05-21T15:25:27.117+0000] {standard_task_runner.py:105} INFO - Job 12: Subtask calculate_advanced_metrics
+[2026-05-21T15:25:27.117+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=389) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-21T15:25:27.118+0000] {standard_task_runner.py:72} INFO - Started process 390 to run task
+[2026-05-21T15:25:27.156+0000] {task_command.py:467} INFO - Running <TaskInstance: create_student_performance_mart.calculate_advanced_metrics manual__2026-05-21T15:25:21.717936+00:00 [running]> on host b0bd83782cc7
+[2026-05-21T15:25:27.228+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='create_student_performance_mart' AIRFLOW_CTX_TASK_ID='calculate_advanced_metrics' AIRFLOW_CTX_EXECUTION_DATE='2026-05-21T15:25:21.717936+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-21T15:25:21.717936+00:00'
+[2026-05-21T15:25:27.229+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-05-21T15:25:28.564+0000] {logging_mixin.py:190} INFO - Расширенные метрики рассчитаны.
+[2026-05-21T15:25:28.565+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-21T15:25:28.572+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-05-21T15:25:28.572+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=create_student_performance_mart, task_id=calculate_advanced_metrics, run_id=manual__2026-05-21T15:25:21.717936+00:00, execution_date=20260521T152521, start_date=20260521T152527, end_date=20260521T152528
+[2026-05-21T15:25:28.618+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-21T15:25:28.634+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-21T15:25:28.636+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
